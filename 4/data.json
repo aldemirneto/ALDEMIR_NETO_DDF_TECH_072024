@@ -1,0 +1,1602 @@
+[
+    {
+        "success": true,
+        "test": "expect_column_values_to_not_be_null",
+        "kwargs": {
+            "column": "order_id",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "partial_unexpected_list": []
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_be_unique",
+        "kwargs": {
+            "column": "order_id",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_count": 32649,
+            "unexpected_percent": 27.403204552512527,
+            "unexpected_percent_total": 27.403204552512527,
+            "unexpected_percent_nonmissing": 27.403204552512527,
+            "partial_unexpected_list": [
+                "e481f51cbdc54678b7cc49136f2d6af7",
+                "e481f51cbdc54678b7cc49136f2d6af7",
+                "e481f51cbdc54678b7cc49136f2d6af7",
+                "e69bfb5eb88e0ed6a785585b27e16dbf",
+                "e69bfb5eb88e0ed6a785585b27e16dbf",
+                "e6ce16cb79ec1d90b1da9085a6118aeb",
+                "e6ce16cb79ec1d90b1da9085a6118aeb",
+                "83018ec114eee8641c97e08f7b4e926f",
+                "83018ec114eee8641c97e08f7b4e926f",
+                "83018ec114eee8641c97e08f7b4e926f",
+                "acce194856392f074dbf9dada14d8d82",
+                "acce194856392f074dbf9dada14d8d82",
+                "9faeb9b2746b9d7526aef5acb08e2aa0",
+                "9faeb9b2746b9d7526aef5acb08e2aa0",
+                "66e4624ae69e7dc89bd50222b59f581f",
+                "66e4624ae69e7dc89bd50222b59f581f",
+                "688052146432ef8253587b930b01a06d",
+                "688052146432ef8253587b930b01a06d",
+                "f271576bed568e896f99eb710cd3a6f8",
+                "f271576bed568e896f99eb710cd3a6f8"
+            ],
+            "partial_unexpected_index_list": [
+                0,
+                1,
+                2,
+                11,
+                12,
+                13,
+                14,
+                23,
+                24,
+                25,
+                32,
+                33,
+                59,
+                60,
+                65,
+                66,
+                73,
+                74,
+                75,
+                76
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": "895ab968e7bb0d5659d16cd74cd1650c",
+                    "count": 63
+                },
+                {
+                    "value": "fedcd9f7ccdc8cba3a18defedd1a5547",
+                    "count": 38
+                },
+                {
+                    "value": "fa65dad1b0e818e3ccc5cb0e39231352",
+                    "count": 29
+                },
+                {
+                    "value": "ccf804e764ed5650cd8759557269dc13",
+                    "count": 26
+                },
+                {
+                    "value": "465c2e1bee4561cb39e0db8c5993aafc",
+                    "count": 24
+                },
+                {
+                    "value": "68986e4324f6a21481df4e6e89abcf01",
+                    "count": 24
+                },
+                {
+                    "value": "6d58638e32674bebee793a47ac4cbadc",
+                    "count": 24
+                },
+                {
+                    "value": "a3725dfe487d359b5be08cac48b64ec5",
+                    "count": 24
+                },
+                {
+                    "value": "c6492b842ac190db807c15aff21a7dd6",
+                    "count": 24
+                },
+                {
+                    "value": "285c2e15bebd4ac83635ccc563dc71f4",
+                    "count": 22
+                },
+                {
+                    "value": "5a3b1c29a49756e75f1ef513383c0c12",
+                    "count": 22
+                },
+                {
+                    "value": "1c11d0f4353b31ac3417fbfa5f0f2a8a",
+                    "count": 21
+                },
+                {
+                    "value": "8272b63d03f5f79c56e9e4120aec44ef",
+                    "count": 21
+                },
+                {
+                    "value": "958c6a70e60365b576dd696ad29bbca2",
+                    "count": 21
+                },
+                {
+                    "value": "1b15974a0141d54e36626dca3fdc731a",
+                    "count": 20
+                },
+                {
+                    "value": "364f451ee38a4268d7c15d317021eb35",
+                    "count": 20
+                },
+                {
+                    "value": "ab14fdcfbe524636d65ee38360e22ce8",
+                    "count": 20
+                },
+                {
+                    "value": "ee9ca989fc93ba09a6eddc250ce01742",
+                    "count": 19
+                },
+                {
+                    "value": "3a1ce4053005d669ac4e0047a13573cf",
+                    "count": 16
+                },
+                {
+                    "value": "9c54a1816e487456bb7eb5082b9823ff",
+                    "count": 16
+                }
+            ]
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_be_in_set",
+        "kwargs": {
+            "column": "order_status",
+            "value_set": [
+                "delivered",
+                "shipped",
+                "processing",
+                "canceled"
+            ],
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_count": 1038,
+            "unexpected_percent": 0.8712219769520659,
+            "unexpected_percent_total": 0.8712219769520659,
+            "unexpected_percent_nonmissing": 0.8712219769520659,
+            "partial_unexpected_list": [
+                "invoiced",
+                "invoiced",
+                "unavailable",
+                "invoiced",
+                "unavailable",
+                "unavailable",
+                "unavailable",
+                "unavailable",
+                "unavailable",
+                "unavailable",
+                "invoiced",
+                "invoiced",
+                "unavailable",
+                "unavailable",
+                "unavailable",
+                "invoiced",
+                "unavailable",
+                "unavailable",
+                "unavailable",
+                "invoiced"
+            ],
+            "partial_unexpected_index_list": [
+                8,
+                125,
+                319,
+                540,
+                702,
+                828,
+                887,
+                1395,
+                1897,
+                2180,
+                2189,
+                2531,
+                2570,
+                2750,
+                2771,
+                3144,
+                3178,
+                3179,
+                3209,
+                3412
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": "unavailable",
+                    "count": 652
+                },
+                {
+                    "value": "invoiced",
+                    "count": 378
+                },
+                {
+                    "value": "created",
+                    "count": 5
+                },
+                {
+                    "value": "approved",
+                    "count": 3
+                }
+            ]
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_match_strftime_format",
+        "kwargs": {
+            "column": "order_purchase_timestamp",
+            "strftime_format": "%Y-%m-%d %H:%M:%S",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_match_strftime_format",
+        "kwargs": {
+            "column": "order_approved_at",
+            "strftime_format": "%Y-%m-%d %H:%M:%S",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 177,
+            "missing_percent": 0.14856097294847367,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_match_strftime_format",
+        "kwargs": {
+            "column": "order_delivered_carrier_date",
+            "strftime_format": "%Y-%m-%d %H:%M:%S",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 2086,
+            "missing_percent": 1.7508372292119556,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_match_strftime_format",
+        "kwargs": {
+            "column": "order_delivered_customer_date",
+            "strftime_format": "%Y-%m-%d %H:%M:%S",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 3421,
+            "missing_percent": 2.8713394828063756,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_match_strftime_format",
+        "kwargs": {
+            "column": "order_estimated_delivery_date",
+            "strftime_format": "%Y-%m-%d %H:%M:%S",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "order_item_id",
+            "min_value": 1,
+            "max_value": 10000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 833,
+            "missing_percent": 0.6991598331416868,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "price",
+            "min_value": 0,
+            "max_value": 10000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 833,
+            "missing_percent": 0.6991598331416868,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "freight_value",
+            "min_value": 0,
+            "max_value": 1000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 833,
+            "missing_percent": 0.6991598331416868,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "product_name_lenght",
+            "min_value": 1,
+            "max_value": 1000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 2542,
+            "missing_percent": 2.133570583248701,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "product_description_lenght",
+            "min_value": 1,
+            "max_value": 10000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 2542,
+            "missing_percent": 2.133570583248701,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "product_photos_qty",
+            "min_value": 0,
+            "max_value": 100,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 2542,
+            "missing_percent": 2.133570583248701,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "product_weight_g",
+            "min_value": 0,
+            "max_value": 100000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 853,
+            "missing_percent": 0.7159463837573337,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "product_length_cm",
+            "min_value": 0,
+            "max_value": 1000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 853,
+            "missing_percent": 0.7159463837573337,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "product_height_cm",
+            "min_value": 0,
+            "max_value": 1000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 853,
+            "missing_percent": 0.7159463837573337,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "product_width_cm",
+            "min_value": 0,
+            "max_value": 1000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 853,
+            "missing_percent": 0.7159463837573337,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_in_set",
+        "kwargs": {
+            "column": "seller_state",
+            "value_set": [
+                "SP",
+                "RJ",
+                "MG",
+                "RS",
+                "PR",
+                "SC",
+                "BA",
+                "ES",
+                "PE",
+                "CE",
+                "PA",
+                "MT",
+                "GO",
+                "AM",
+                "RN",
+                "PB",
+                "DF",
+                "MS",
+                "MA",
+                "PI",
+                "SE",
+                "AL",
+                "RO",
+                "TO",
+                "AC",
+                "RR",
+                "AP"
+            ],
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 833,
+            "missing_percent": 0.6991598331416868,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_be_in_set",
+        "kwargs": {
+            "column": "payment_type",
+            "value_set": [
+                "credit_card",
+                "boleto",
+                "voucher",
+                "debit_card"
+            ],
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 3,
+            "missing_percent": 0.0025179825923470115,
+            "unexpected_count": 3,
+            "unexpected_percent": 0.002518045996306866,
+            "unexpected_percent_total": 0.0025179825923470115,
+            "unexpected_percent_nonmissing": 0.002518045996306866,
+            "partial_unexpected_list": [
+                "not_defined",
+                "not_defined",
+                "not_defined"
+            ],
+            "partial_unexpected_index_list": [
+                1362,
+                47855,
+                48231
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": "not_defined",
+                    "count": 3
+                }
+            ]
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "payment_installments",
+            "min_value": 1,
+            "max_value": 24,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 3,
+            "missing_percent": 0.0025179825923470115,
+            "unexpected_count": 3,
+            "unexpected_percent": 0.002518045996306866,
+            "unexpected_percent_total": 0.0025179825923470115,
+            "unexpected_percent_nonmissing": 0.002518045996306866,
+            "partial_unexpected_list": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "partial_unexpected_index_list": [
+                76229,
+                79377,
+                79378
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": 0.0,
+                    "count": 3
+                }
+            ]
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "payment_value",
+            "min_value": 0,
+            "max_value": 10000,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 3,
+            "missing_percent": 0.0025179825923470115,
+            "unexpected_count": 8,
+            "unexpected_percent": 0.006714789323484976,
+            "unexpected_percent_total": 0.006714620246258698,
+            "unexpected_percent_nonmissing": 0.006714789323484976,
+            "partial_unexpected_list": [
+                13664.08,
+                13664.08,
+                13664.08,
+                13664.08,
+                13664.08,
+                13664.08,
+                13664.08,
+                13664.08
+            ],
+            "partial_unexpected_index_list": [
+                15914,
+                15915,
+                15916,
+                15917,
+                15918,
+                15919,
+                15920,
+                15921
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": 13664.08,
+                    "count": 8
+                }
+            ]
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "review_score",
+            "min_value": 1,
+            "max_value": 5,
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 997,
+            "missing_percent": 0.8368095481899901,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_match_strftime_format",
+        "kwargs": {
+            "column": "order_id",
+            "strftime_format": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_count": 119143,
+            "unexpected_percent": 100.0,
+            "unexpected_percent_total": 100.0,
+            "unexpected_percent_nonmissing": 100.0,
+            "partial_unexpected_list": [
+                "e481f51cbdc54678b7cc49136f2d6af7",
+                "e481f51cbdc54678b7cc49136f2d6af7",
+                "e481f51cbdc54678b7cc49136f2d6af7",
+                "53cdb2fc8bc7dce0b6741e2150273451",
+                "47770eb9100c2d0c44946d9cf07ec65d",
+                "949d5b44dbf5de918fe9c16f97b45f8a",
+                "ad21c59c0840e6cb83a9ceb5573f8159",
+                "a4591c265e18cb1dcee52889e2d8acc3",
+                "136cce7faa42fdb2cefd53fdc79a6098",
+                "6514b8ad8028c9f2cc2374ded245783f",
+                "76c6e866289321a7c93b82b54852dc33",
+                "e69bfb5eb88e0ed6a785585b27e16dbf",
+                "e69bfb5eb88e0ed6a785585b27e16dbf",
+                "e6ce16cb79ec1d90b1da9085a6118aeb",
+                "e6ce16cb79ec1d90b1da9085a6118aeb",
+                "34513ce0c4fab462a55830c0989c7edb",
+                "82566a660a982b15fb86e904c8d32918",
+                "5ff96c15d0b717ac6ad1f3d77225a350",
+                "432aaf21d85167c2c86ec9448c4e42cc",
+                "dcb36b511fcac050b97cd5c05de84dc3"
+            ],
+            "partial_unexpected_index_list": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": "895ab968e7bb0d5659d16cd74cd1650c",
+                    "count": 63
+                },
+                {
+                    "value": "fedcd9f7ccdc8cba3a18defedd1a5547",
+                    "count": 38
+                },
+                {
+                    "value": "fa65dad1b0e818e3ccc5cb0e39231352",
+                    "count": 29
+                },
+                {
+                    "value": "ccf804e764ed5650cd8759557269dc13",
+                    "count": 26
+                },
+                {
+                    "value": "465c2e1bee4561cb39e0db8c5993aafc",
+                    "count": 24
+                },
+                {
+                    "value": "68986e4324f6a21481df4e6e89abcf01",
+                    "count": 24
+                },
+                {
+                    "value": "6d58638e32674bebee793a47ac4cbadc",
+                    "count": 24
+                },
+                {
+                    "value": "a3725dfe487d359b5be08cac48b64ec5",
+                    "count": 24
+                },
+                {
+                    "value": "c6492b842ac190db807c15aff21a7dd6",
+                    "count": 24
+                },
+                {
+                    "value": "285c2e15bebd4ac83635ccc563dc71f4",
+                    "count": 22
+                },
+                {
+                    "value": "5a3b1c29a49756e75f1ef513383c0c12",
+                    "count": 22
+                },
+                {
+                    "value": "1c11d0f4353b31ac3417fbfa5f0f2a8a",
+                    "count": 21
+                },
+                {
+                    "value": "8272b63d03f5f79c56e9e4120aec44ef",
+                    "count": 21
+                },
+                {
+                    "value": "958c6a70e60365b576dd696ad29bbca2",
+                    "count": 21
+                },
+                {
+                    "value": "1b15974a0141d54e36626dca3fdc731a",
+                    "count": 20
+                },
+                {
+                    "value": "364f451ee38a4268d7c15d317021eb35",
+                    "count": 20
+                },
+                {
+                    "value": "ab14fdcfbe524636d65ee38360e22ce8",
+                    "count": 20
+                },
+                {
+                    "value": "ee9ca989fc93ba09a6eddc250ce01742",
+                    "count": 19
+                },
+                {
+                    "value": "3a1ce4053005d669ac4e0047a13573cf",
+                    "count": 16
+                },
+                {
+                    "value": "9c54a1816e487456bb7eb5082b9823ff",
+                    "count": 16
+                }
+            ]
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_match_strftime_format",
+        "kwargs": {
+            "column": "customer_id",
+            "strftime_format": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_count": 119143,
+            "unexpected_percent": 100.0,
+            "unexpected_percent_total": 100.0,
+            "unexpected_percent_nonmissing": 100.0,
+            "partial_unexpected_list": [
+                "9ef432eb6251297304e76186b10a928d",
+                "9ef432eb6251297304e76186b10a928d",
+                "9ef432eb6251297304e76186b10a928d",
+                "b0830fb4747a6c6d20dea0b8c802d7ef",
+                "41ce2a54c0b03bf3443c3d931a367089",
+                "f88197465ea7920adcdbec7375364d82",
+                "8ab97904e6daea8866dbdbc4fb7aad2c",
+                "503740e9ca751ccdda7ba28e9ab8f608",
+                "ed0271e0b7da060a393796590e7b737a",
+                "9bdf08b4b3b52b5526ff42d37d47f222",
+                "f54a9f0e6b351c431402b8461ea51999",
+                "31ad1d1b63eb9962463f764d4e6e0c9d",
+                "31ad1d1b63eb9962463f764d4e6e0c9d",
+                "494dded5b201313c64ed7f100595b95c",
+                "494dded5b201313c64ed7f100595b95c",
+                "7711cf624183d843aafe81855097bc37",
+                "d3e3b74c766bc6214e0c830b17ee2341",
+                "19402a48fe860416adf93348aba37740",
+                "3df704f53d3f1d4818840b34ec672a9f",
+                "3b6828a50ffe546942b7a473d70ac0fc"
+            ],
+            "partial_unexpected_index_list": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": "270c23a11d024a44c896d1894b261a83",
+                    "count": 63
+                },
+                {
+                    "value": "13aa59158da63ba0e93ec6ac2c07aacb",
+                    "count": 38
+                },
+                {
+                    "value": "9af2372a1e49340278e7c1ef8d749f34",
+                    "count": 29
+                },
+                {
+                    "value": "92cd3ec6e2d643d4ebd0e3d6238f69e2",
+                    "count": 26
+                },
+                {
+                    "value": "2ba91e12e5e4c9f56b82b86d9031d329",
+                    "count": 24
+                },
+                {
+                    "value": "63b964e79dee32a3587651701a2b8dbf",
+                    "count": 24
+                },
+                {
+                    "value": "6ee2f17e3b6c33d6a9557f280edd2925",
+                    "count": 24
+                },
+                {
+                    "value": "86cc80fef09f7f39df4b0dbce48e81cb",
+                    "count": 24
+                },
+                {
+                    "value": "d22f25a9fadfb1abbc2e29395b1239f4",
+                    "count": 24
+                },
+                {
+                    "value": "b246eeed30b362c09d867b9e598bee51",
+                    "count": 22
+                },
+                {
+                    "value": "be1c4e52bb71e0c54b11a26b8e8d59f2",
+                    "count": 22
+                },
+                {
+                    "value": "50920f8cd0681fd86ebe93670c8fe52e",
+                    "count": 21
+                },
+                {
+                    "value": "5e0f7317756669ff7b384444dbb81fa3",
+                    "count": 21
+                },
+                {
+                    "value": "fc3d1daec319d62d49bfb5e1f83123e9",
+                    "count": 21
+                },
+                {
+                    "value": "23924b2105c5376cd6204757c8b68752",
+                    "count": 20
+                },
+                {
+                    "value": "bd5d39761aa56689a265d95d8d32b8be",
+                    "count": 20
+                },
+                {
+                    "value": "be1b70680b9f9694d8c70f41fa3dc92b",
+                    "count": 20
+                },
+                {
+                    "value": "eed931d3a5222a9a511d18be7fd2a5ba",
+                    "count": 19
+                },
+                {
+                    "value": "1d4411212e90d6a24fd2d09f74878b48",
+                    "count": 16
+                },
+                {
+                    "value": "1d48a5dcde374b9d63b2c29e6af97cb8",
+                    "count": 16
+                }
+            ]
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "order_purchase_timestamp",
+            "min_value": "1900-01-01 00:00:00",
+            "max_value": "2024-07-26 18:11:31",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_be_in_set",
+        "kwargs": {
+            "column": "product_category_name",
+            "value_set": [
+                "Eletr\u00f4nicos",
+                "Roupas",
+                "Casa",
+                "Beleza"
+            ],
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 2542,
+            "missing_percent": 2.133570583248701,
+            "unexpected_count": 116601,
+            "unexpected_percent": 100.0,
+            "unexpected_percent_total": 97.8664294167513,
+            "unexpected_percent_nonmissing": 100.0,
+            "partial_unexpected_list": [
+                "utilidades_domesticas",
+                "utilidades_domesticas",
+                "utilidades_domesticas",
+                "perfumaria",
+                "automotivo",
+                "pet_shop",
+                "papelaria",
+                "automotivo",
+                "automotivo",
+                "moveis_decoracao",
+                "moveis_escritorio",
+                "moveis_escritorio",
+                "ferramentas_jardim",
+                "ferramentas_jardim",
+                "informatica_acessorios",
+                "perfumaria",
+                "cama_mesa_banho",
+                "brinquedos",
+                "perfumaria",
+                "construcao_ferramentas_construcao"
+            ],
+            "partial_unexpected_index_list": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": "cama_mesa_banho",
+                    "count": 11988
+                },
+                {
+                    "value": "beleza_saude",
+                    "count": 10032
+                },
+                {
+                    "value": "esporte_lazer",
+                    "count": 9004
+                },
+                {
+                    "value": "moveis_decoracao",
+                    "count": 8832
+                },
+                {
+                    "value": "informatica_acessorios",
+                    "count": 8150
+                },
+                {
+                    "value": "utilidades_domesticas",
+                    "count": 7380
+                },
+                {
+                    "value": "relogios_presentes",
+                    "count": 6213
+                },
+                {
+                    "value": "telefonia",
+                    "count": 4726
+                },
+                {
+                    "value": "ferramentas_jardim",
+                    "count": 4590
+                },
+                {
+                    "value": "automotivo",
+                    "count": 4400
+                },
+                {
+                    "value": "brinquedos",
+                    "count": 4281
+                },
+                {
+                    "value": "cool_stuff",
+                    "count": 3999
+                },
+                {
+                    "value": "perfumaria",
+                    "count": 3589
+                },
+                {
+                    "value": "bebes",
+                    "count": 3204
+                },
+                {
+                    "value": "eletronicos",
+                    "count": 2846
+                },
+                {
+                    "value": "papelaria",
+                    "count": 2625
+                },
+                {
+                    "value": "fashion_bolsas_e_acessorios",
+                    "count": 2170
+                },
+                {
+                    "value": "pet_shop",
+                    "count": 2030
+                },
+                {
+                    "value": "moveis_escritorio",
+                    "count": 1788
+                },
+                {
+                    "value": "consoles_games",
+                    "count": 1192
+                }
+            ]
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_be_in_set",
+        "kwargs": {
+            "column": "customer_city",
+            "value_set": [
+                "S\u00e3o Paulo",
+                "Rio de Janeiro",
+                "Belo Horizonte",
+                "Salvador"
+            ],
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_count": 119143,
+            "unexpected_percent": 100.0,
+            "unexpected_percent_total": 100.0,
+            "unexpected_percent_nonmissing": 100.0,
+            "partial_unexpected_list": [
+                "sao paulo",
+                "sao paulo",
+                "sao paulo",
+                "barreiras",
+                "vianopolis",
+                "sao goncalo do amarante",
+                "santo andre",
+                "congonhinhas",
+                "santa rosa",
+                "nilopolis",
+                "faxinalzinho",
+                "sorocaba",
+                "sorocaba",
+                "rio de janeiro",
+                "rio de janeiro",
+                "sao paulo",
+                "ouro preto",
+                "sao paulo",
+                "sao paulo",
+                "goiania"
+            ],
+            "partial_unexpected_index_list": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": "sao paulo",
+                    "count": 18875
+                },
+                {
+                    "value": "rio de janeiro",
+                    "count": 8311
+                },
+                {
+                    "value": "belo horizonte",
+                    "count": 3299
+                },
+                {
+                    "value": "brasilia",
+                    "count": 2500
+                },
+                {
+                    "value": "curitiba",
+                    "count": 1827
+                },
+                {
+                    "value": "campinas",
+                    "count": 1757
+                },
+                {
+                    "value": "porto alegre",
+                    "count": 1675
+                },
+                {
+                    "value": "salvador",
+                    "count": 1544
+                },
+                {
+                    "value": "guarulhos",
+                    "count": 1415
+                },
+                {
+                    "value": "sao bernardo do campo",
+                    "count": 1131
+                },
+                {
+                    "value": "niteroi",
+                    "count": 1065
+                },
+                {
+                    "value": "santo andre",
+                    "count": 922
+                },
+                {
+                    "value": "osasco",
+                    "count": 904
+                },
+                {
+                    "value": "goiania",
+                    "count": 879
+                },
+                {
+                    "value": "santos",
+                    "count": 851
+                },
+                {
+                    "value": "sao jose dos campos",
+                    "count": 828
+                },
+                {
+                    "value": "fortaleza",
+                    "count": 766
+                },
+                {
+                    "value": "sorocaba",
+                    "count": 744
+                },
+                {
+                    "value": "recife",
+                    "count": 713
+                },
+                {
+                    "value": "jundiai",
+                    "count": 697
+                }
+            ]
+        }
+    },
+    {
+        "success": false,
+        "test": "expect_column_values_to_be_unique",
+        "kwargs": {
+            "column": "review_id",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 997,
+            "missing_percent": 0.8368095481899901,
+            "unexpected_count": 32735,
+            "unexpected_percent": 27.707243579977316,
+            "unexpected_percent_total": 27.475386720159804,
+            "unexpected_percent_nonmissing": 27.707243579977316,
+            "partial_unexpected_list": [
+                "a54f0611adc9ed256b57ede6b6eb5114",
+                "a54f0611adc9ed256b57ede6b6eb5114",
+                "a54f0611adc9ed256b57ede6b6eb5114",
+                "abc5655186d40772bd6e410420e6a3ed",
+                "abc5655186d40772bd6e410420e6a3ed",
+                "15898b543726a832d4137fbef5d1d00e",
+                "15898b543726a832d4137fbef5d1d00e",
+                "219cf59cf889bc85babbd1cd1fe30f2d",
+                "219cf59cf889bc85babbd1cd1fe30f2d",
+                "219cf59cf889bc85babbd1cd1fe30f2d",
+                "2d4303fd561eb4ab51c87faa6598dc10",
+                "2d4303fd561eb4ab51c87faa6598dc10",
+                "25b502beeef8b3aff87449ccdc001f53",
+                "25b502beeef8b3aff87449ccdc001f53",
+                "4ff7c437ae60fa0b3c700ade55155027",
+                "4ff7c437ae60fa0b3c700ade55155027",
+                "19d60869413aa63834affc9ecc9d9f90",
+                "c7862c2b2f4259f9b1173a9c14e737e5",
+                "c7862c2b2f4259f9b1173a9c14e737e5",
+                "c52b2e7eca1856a268a36a9df72a6150"
+            ],
+            "partial_unexpected_index_list": [
+                0,
+                1,
+                2,
+                11,
+                12,
+                13,
+                14,
+                23,
+                24,
+                25,
+                32,
+                33,
+                59,
+                60,
+                65,
+                66,
+                67,
+                73,
+                74,
+                75
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": "eef5dbca8d37dfce6db7d7b16dd0525e",
+                    "count": 63
+                },
+                {
+                    "value": "7145a6f0d38ec713897856cbdcfcdb7f",
+                    "count": 38
+                },
+                {
+                    "value": "f28281373ab8815bafafe371218f02ce",
+                    "count": 29
+                },
+                {
+                    "value": "8823bba1e3301fee652eb06de8ef9435",
+                    "count": 26
+                },
+                {
+                    "value": "b0c2f8c122ebef9f77753f7d167cf634",
+                    "count": 24
+                },
+                {
+                    "value": "b5292206f96cd5d97359940203a0b510",
+                    "count": 24
+                },
+                {
+                    "value": "b79b22bb50f78f1afe361661011fd892",
+                    "count": 24
+                },
+                {
+                    "value": "cc074f1c33940c4f0dd904705f98e39e",
+                    "count": 24
+                },
+                {
+                    "value": "7e568736c98c553aea896a5dca746d5a",
+                    "count": 22
+                },
+                {
+                    "value": "6fe49ee0a2b00dddf7ebddb5847f9283",
+                    "count": 21
+                },
+                {
+                    "value": "8fb71ed887db39231871ef3d1ba781cf",
+                    "count": 21
+                },
+                {
+                    "value": "e8236fe7b6e1bdd513a500de361e2b87",
+                    "count": 21
+                },
+                {
+                    "value": "784cacadc26024a079605ca72906d7f8",
+                    "count": 20
+                },
+                {
+                    "value": "be332150a9c96e68c9565ea53cba2355",
+                    "count": 20
+                },
+                {
+                    "value": "e8ae7ef5b9a6931a082607b921c0ee56",
+                    "count": 19
+                },
+                {
+                    "value": "a73e518402ea258190fcc7054b748953",
+                    "count": 16
+                },
+                {
+                    "value": "b5c66480c76e304e904cf9c16a883113",
+                    "count": 16
+                },
+                {
+                    "value": "4c87b9291aa0926fb7a369a928ae1f58",
+                    "count": 15
+                },
+                {
+                    "value": "6b9f2c820cd307e16c09d1421ef49247",
+                    "count": 15
+                },
+                {
+                    "value": "c5fe8d371ac7b94e54def6576817739b",
+                    "count": 15
+                }
+            ]
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_in_set",
+        "kwargs": {
+            "column": "review_score",
+            "value_set": [
+                1.0,
+                2.0,
+                3.0,
+                4.0,
+                5.0
+            ],
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 997,
+            "missing_percent": 0.8368095481899901,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "_expect_column_values_to_be_of_type__map",
+        "kwargs": {
+            "column": "review_comment_title",
+            "type_": "str",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 105154,
+            "missing_percent": 88.25864717188588,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "_expect_column_values_to_be_of_type__map",
+        "kwargs": {
+            "column": "review_comment_message",
+            "type_": "str",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 68898,
+            "missing_percent": 57.827988215841465,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    },
+    {
+        "success": true,
+        "test": "expect_column_values_to_be_between",
+        "kwargs": {
+            "column": "review_creation_date",
+            "min_value": "1900-01-01",
+            "max_value": "2024-07-26",
+            "result_format": "SUMMARY"
+        },
+        "result": {
+            "element_count": 119143,
+            "missing_count": 997,
+            "missing_percent": 0.8368095481899901,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_index_list": [],
+            "partial_unexpected_counts": []
+        }
+    }
+]

@@ -12,3 +12,10 @@ seria melhor
 
 Não consegui acesso ao modulo de inteligência usando as mesmas credenciais cadastradas
 ![alt text](image-2.png)
+
+
+
+Tentando utilizar a biblioteca soda-core e seguindo o exemplo disponível no repositório oficial
+[exemplo](https://github.com/sodadata/soda-core/blob/main/examples/pandas_dask_example.py)
+ncontrei um problema ao executar o comando execute() da classe Scan, ao investigar, pude ver que o problema já estava documentado em formato de issue no repositório 
+[issue](https://github.com/sodadata/soda-core/issues/2073)

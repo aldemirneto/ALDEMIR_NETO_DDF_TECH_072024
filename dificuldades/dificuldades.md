@@ -9,3 +9,6 @@ Outlier: extrapolar o que foi pedido.
 
 seria melhor
 
+
+Não consegui acesso ao modulo de inteligência usando as mesmas credenciais cadastradas
+![alt text](image-2.png)
